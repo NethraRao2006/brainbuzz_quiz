@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body>
+<div class="heading">
+        <i class="fa-solid fa-brain"></i>
+        <p class="logo">BRAINBUZZ</p>
+        <p class="quote"><strong>Play. Learn. Win!</strong> </p>
+        <br>
+        <div class="level">Select the difficulty level :
+            <ol>
+                <button class="list1">EASY</button> <br>
+                <button class="list2">MEDIUM</button><br>
+                <button  class="list3">DIFFICULT</button><br>
+            </ol>
+        </div>
+    </div>
+
+      <div id="score">
+        <div class="score">hello</div>
+       <button class="playAgain">Play Again</button>
+        <button onclick="window.location.reload();" class="home">HOME</button>
+      </div>
+
+
+      <!-- Easy level -->
+<div id="easy">
+    <form class="easy">
+        <div class="qn">
+        <label>1. Which tag is used for the largest heading ?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio1" value="A" >A) &lt; h6 &gt;</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio1" value="B">B) &lt; h1 &gt;</label></li><br>
+           <li><label><input type="radio" name="radio1" value="C">C) &lt; h3 &gt;</label></li><br>
+           <li> <label><input type="radio" name="radio1" value="D">D) &lt; h5 &gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>2. What is the correct HTML tag for inserting a line break ?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio2"  value="A" >A) &lt; break &gt;</label></li><br>
+            <li><label><input type="radio" name="radio2" value="B">B) &lt; lb &gt;</label></li><br>
+            <li  class="correctAns"><label><input type="radio" name="radio2" value="C">C) &lt; br &gt;</label></li><br>
+           <li><label><input type="radio" name="radio2" value="D">D) &lt; b &gt;</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>3. Which attribute opens a link in a new tab?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio3" value="A" >A) href = "_blank"</label></li><br>
+            <li  class="correctAns"><label><input type="radio" name="radio3" value="B">B) target = "_blank"</label></li><br>
+            <li><label><input type="radio" name="radio3" value="C">C) link = "_blank"</label></li><br>
+            <li><label><input type="radio" name="radio3" value="D">D) newtab</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>4. The  &lt; title &gt;  tag defines:</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio4" value="A">A) A paragraph heading</label></li><br>
+           <li  class="correctAns"><label><input type="radio" name="radio4" value="B">B) Page title in browser tab</label> </li><br>
+            <li><label><input type="radio" name="radio4" value="C">C) Website footer</label></li><br>
+            <li><label><input type="radio" name="radio4" value="D">D) Bold text</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>5. What is the difference between &lt; ul &gt; and &lt; ol &gt;?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio5" value="A" >A) &lt; ul &gt; → numbered and &lt; ol &gt;→ bulleted</label></li><br>
+            <li  class="correctAns"><label><input type="radio" name="radio5" value="B">B) &lt; ol &gt; → numbered and &lt; ul &gt;→ bulleted</label></li><br>
+            <li><label><input type="radio" name="radio5" value="C">C) Both are same</label></li><br>
+           <li><label><input type="radio" name="radio5" value="D">D) Both create tables</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>6. Which tag is used to display tabular data?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio6" value="A" >A) &lt; div &gt;</label></li><br>
+            <li  class="correctAns"><label><input type="radio" name="radio6" value="B">B) &lt; table &gt;</label></li><br>
+            <li><label><input type="radio" name="radio6" value="C">C) &lt; section &gt;</label></li><br>
+            <li><label><input type="radio" name="radio6" value="D">D) &lt; grid &gt;</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>7. Which attribute specifies the source of an image?</label><br>
+        <ul>
+           <li class="correctAns" ><label><input type="radio" name="radio7" value="A" >A) src</label></li><br>
+           <li><label><input type="radio" name="radio7" value="B">B) img</label></li><br>
+           <li><label><input type="radio" name="radio7" value="C">C) href</label></li><br>
+            <li><label><input type="radio" name="radio7" value="D">D) link</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>8.  Which tag is used to create a checkbox?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio8" value="A" >A) &lt; checkbox &gt;</label></li><br>
+            <li><label><input type="radio" name="radio8" value="B">B) &lt;input type="check"&gt;</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio8" value="C">C) &lt; input type="checkbox" &gt;</label></li><br>
+            <li><label><input type="radio" name="radio8" value="D">D) &lt; box &gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+         <label>9. Which property changes background color?</label><br>
+        <ul>
+           <li><label><input type="radio" name="radio9" value="A" >A) color</label></li><br>
+             <li><label><input type="radio" name="radio9" value="B">B) bgcolor</label></li><br>
+              <li class="correctAns"><label><input type="radio" name="radio9" value="C">C) background-color</label></li><br>
+            <li><label><input type="radio" name="radio9" value="D">D) background-style</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>10. Which property sets text alignment?</label><br>
+        <ul>
+           <li class="correctAns"><label><input type="radio" name="radio10" value="A">A) text-align </label></li><br>
+           <li><label><input type="radio" name="radio10" value="B">B) align</label></li><br>
+           <li><label><input type="radio" name="radio10" value="C">C) font-align</label> </li><br>
+           <li><label><input type="radio" name="radio10" value="D">D) paragraph-align</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>11. How do you apply a class selector?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio11" value="A">A) #classname {}</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio11" value="B">B) .classname {}</label></li><br>
+            <li><label><input type="radio" name="radio11" value="C">C) classname {}</label></li><br>
+            <li><label><input type="radio" name="radio11" value="D">D) *classname {}</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>12. Default display type of &lt; div &gt; is:</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio12" value="A" >A) inline</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio12" value="B">B) block</label></li><br>
+            <li><label><input type="radio" name="radio12" value="C">C) flex</label></li><br>
+           <li><label><input type="radio" name="radio12" value="D">D) none</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>13. Which property changes font size?</label><br>
+        <ul>
+           <li><label><input type="radio" name="radio13" value="A">A) text-size</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio13" value="B">B) font-size</label></li><br>
+            <li><label><input type="radio" name="radio13" value="C">C) size</label></li><br>
+           <li><label><input type="radio" name="radio13" value="D">D) font-style</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>14. How do you make text bold with CSS?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio14" value="A">A) text-weight: bold;</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio14" value="B">B) font-weight: bold;</label></li><br>
+            <li><label><input type="radio" name="radio14" value="C">C) style: bold;</label></li><br>
+            <li><label><input type="radio" name="radio14" value="D">D)  text-bold: true;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>15. What is the difference between inline and block elements?</label><br>
+        <ul>
+           <li><label><input type="radio" name="radio15" value="A">A) Inline starts on new line, block stays within line</label></li><br>
+               <li class="correctAns"><label><input type="radio" name="radio15" value="B">B) Block starts on new line, inline stays within line</label> </li><br>
+             <li><label><input type="radio" name="radio15" value="C">C) Both are same</label></li><br>
+             <li> <label><input type="radio" name="radio15" value="D">D) None of these</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>16. How do you add a CSS comment?</label><br>
+        <ul>
+            <li><label><input type="radio" name="radio16"value="A" >A) // comment</label></li><br>
+            <li><label><input type="radio" name="radio16" value="B">B) &lt;!-- comment --&gt; </label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio16" value="C">C)  /* comment */</label></li><br>
+           <li><label><input type="radio" name="radio16" value="D">D) ## comment</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>17. Which keyword declares a constant?</label><br>
+        <ul>
+           <li class="correctAns"><label><input type="radio" name="radio17" value="A">A) const</label></li><br>
+           <li><label><input type="radio" name="radio17" value="B">B) var </label></li><br>
+           <li><label><input type="radio" name="radio17"value="C">C) let</label></li><br>
+           <li><label><input type="radio" name="radio17"value="D">D) fixed</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>18. Output of console.log(5 + "5"):</label><br>
+        <ul>
+           <li class="correctAns"><label><input type="radio" name="radio18" value="A">A) 55</label></li><br>
+             <li><label><input type="radio" name="radio18"value="B">B) 10</label></li> <br>
+             <li><label><input type="radio" name="radio18"value="C">C) "10"</label></li><br>
+               <li><label><input type="radio" name="radio18"value="D">D) Error</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>19. Symbol for single-line comments:</label><br>
+        <ul> 
+             <li class="correctAns"><label><input type="radio" name="radio19"value="A">A) //</label></li><br>
+            <li><label><input type="radio" name="radio19" value="B">B) &lt;!--</label></li><br>
+            <li><label><input type="radio" name="radio19" value="C">C) #</label></li><br>
+            <li><label><input type="radio" name="radio19" value="D">D) /* */</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>20. How to show an alert box?</label><br>
+        <ul>
+           <li class="correctAns"><label><input type="radio" name="radio20" value="A">A) alert("Hello")</label></li><br>
+           <li><label><input type="radio" name="radio20" value="B">B) msg("Hello")</label></li><br>
+             <li><label><input type="radio" name="radio20" value="C">C) popup("Hello")</label></li><br>
+           <li><label><input type="radio" name="radio20" value="D">D) prompt("Hello")</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>21. What is typeof "Hello"?</label><br>
+        <ul>
+             <li class="correctAns"><label><input type="radio" name="radio21"value="A">A) string</label></li><br>
+           <li><label><input type="radio" name="radio21" value="B">B) text</label></li><br>
+            <li><label><input type="radio" name="radio21" value="C">C) object</label></li><br>
+             <li><label><input type="radio" name="radio21" value="D">D) char</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn">
+        <label>22. Result of true && false:</label><br>
+            <ul>
+             <li><label><input type="radio" name="radio22" value="A">A) true</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio22" value="B">B) false</label></li><br>
+            <li><label><input type="radio" name="radio22" value="C">C) undefined</label></li><br>
+            <li><label><input type="radio" name="radio22" value="D">D) null</label></li><br>
+        </ul>
+        </div>
+
+
+         <div class="qn">
+        <label>23. Which function prints in console?</label><br>
+        <ul>
+           <li><label><input type="radio" name="radio23" value="A">A) log.print()</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio23" value="B">B) console.log()</label></li><br>
+             <li><label><input type="radio" name="radio23" value="C">C) console.print()</label></li><br>
+            <li><label><input type="radio" name="radio23" value="D">D) alert.log()</label></li><br>
+        </ul>
+        </div>
+
+
+           <div class="qn">
+         <label>24. Output of 2 ** 3:</label><br>
+            <ul>
+            <li><label><input type="radio" name="radio24" value="A">A) 5</label></li><br>
+            <li><label><input type="radio" name="radio24" value="B">B) 6</label></li><br>
+            <li class="correctAns"><label><input type="radio" name="radio24" value="C">C) 8</label></li><br>
+            <li><label><input type="radio" name="radio24" value="D">D) 9</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn">
+        <label>25. Result of 10 % 3:</label><br>
+            <ul>
+           <li class="correctAns"><label><input type="radio" name="radio25" value="A">A) 1</label></li><br>
+           <li><label><input type="radio" name="radio25" value="B">B) 2</label></li><br>
+           <li><label><input type="radio" name="radio25" value="C">C) 3</label></li><br>
+           <li><label><input type="radio" name="radio25" value="D">D) 0</label></li><br>
+        </ul>
+        </div>
+
+        <input class="submit" type="submit">
+
+    </form>
+</div>
+
+<!-- Medium level -->
+<div id="medium">
+    <form class="medium">
+        <div class="qn2">
+        <label>1. Which input type is used for picking a date?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio1" value="A" >A) &lt; input type="time" &gt;</label></li><br>
+           <li><label> <input type="radio" name="radio1" value="B">B) &lt; input type="datetime" &gt;</label></li><br>
+           <li  class="correctAns"><label><input type="radio" name="radio1" value="C">C) &lt; input type="date" &gt;</label></li><br>
+           <li> <label><input type="radio" name="radio1" value="D">D) &lt;input type="calendar"&gt;</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn2">
+        <label>2. Which tag is used for defining navigation links? </label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio2" value="A" >A) &lt; navigate &gt;</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio2" value="B">B) &lt; nav &gt;</label></li><br>
+           <li  ><label><input type="radio" name="radio2" value="C">C) &lt; links &gt;</label></li><br>
+           <li> <label><input type="radio" name="radio2" value="D">D) &lt;menu&gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>3. Which attribute provides alternative text for images? </label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio3" value="A" >A) src</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio3" value="B">B) alt</label></li><br>
+           <li  ><label><input type="radio" name="radio3" value="C">C) href</label></li><br>
+           <li> <label><input type="radio" name="radio3" value="D">D) text</label></li><br>
+        </ul>
+        </div>
+
+          <div class="qn2">
+        <label>4. What does the &lt; thead &gt; tag define inside a table? </label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio4" value="A" >A) Table body</label></li><br>
+           <li  ><label><input type="radio" name="radio4" value="B">B) Table caption</label></li><br>
+           <li> <label><input type="radio" name="radio4" value="C">C) Table footer</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio4" value="D">D) Table heading row</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>5. Which tag is used to group block-level and inline elements? </label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio5" value="A" >A) &lt; section &gt;</label></li><br>
+           <li><label><input type="radio" name="radio5" value="B">B) &lt; article &gt;</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio5" value="C">C) &lt; div &gt;</label></li><br>
+           <li><label> <input type="radio" name="radio5" value="D">D) &lt; span &gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>6. Which HTML element is used to embed an external webpage?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio6" value="A" >A) &lt; iframe &gt;</label></li><br>
+           <li><label><input type="radio" name="radio6" value="B">B) &lt; frame &gt;</label></li><br>
+           <li > <label><input type="radio" name="radio6" value="C">C) &lt; embed &gt;</label></li><br>
+           <li><label> <input type="radio" name="radio6" value="D">D) &lt; object &gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>7. Which tag is used for marking emphasized text?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio7" value="A" >A) &lt; b &gt;</label></li><br>
+           <li><label><input type="radio" name="radio7" value="B">B) &lt; strong &gt;</label></li><br>
+           <li  class="correctAns"> <label><input type="radio" name="radio7" value="C">C) &lt; em &gt;</label></li><br>
+           <li><label> <input type="radio" name="radio7" value="D">D) &lt; i &gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>8. Which attribute is used to merge two table cells horizontally?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio8" value="A" >A) colspan</label></li><br>
+           <li><label><input type="radio" name="radio8" value="B">B) rowspan </label></li><br>
+           <li > <label><input type="radio" name="radio8" value="C">C) merge</label></li><br>
+           <li><label> <input type="radio" name="radio8" value="D">D) span</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>9. Which CSS property is used for spacing between elements’ borders?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio9" value="A" >A) margin</label></li><br>
+           <li><label><input type="radio" name="radio9" value="B">B) padding </label></li><br>
+           <li > <label><input type="radio" name="radio9" value="C">C) spacing</label></li><br>
+           <li><label> <input type="radio" name="radio9" value="D">D) border-spacing </label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>10. Which property adds space inside an element, between content and border?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio10" value="A" >A) margin</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio10" value="B">B) padding </label></li><br>
+           <li > <label><input type="radio" name="radio10" value="C">C) spacing</label></li><br>
+           <li><label> <input type="radio" name="radio10" value="D">D) align </label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>11. What is the default value of position in CSS?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio11" value="A" >A) relative</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio11" value="B">B) static </label></li><br>
+           <li > <label><input type="radio" name="radio11" value="C">C) absolute</label></li><br>
+           <li><label> <input type="radio" name="radio11" value="D">D) fixed</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>12. Which property is used to change text decoration (underline, overline)?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio12" value="A" >A) font-style</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio12" value="B">B) text-decoration</label></li><br>
+           <li > <label><input type="radio" name="radio12" value="C">C) decoration-style</label></li><br>
+           <li><label> <input type="radio" name="radio12" value="D">D) text-align</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>13. Which unit is relative to the root element’s font size?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio13" value="A" >A) rem</label></li><br>
+           <li ><label><input type="radio" name="radio13" value="B">B) em </label></li><br>
+           <li > <label><input type="radio" name="radio13" value="C">C) %</label></li><br>
+           <li><label> <input type="radio" name="radio13" value="D">D) px</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn2">
+        <label>14. Which CSS property controls transparency?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio14" value="A" >A) opacity</label></li><br>
+           <li ><label><input type="radio" name="radio14" value="B">B) visibility </label></li><br>
+           <li > <label><input type="radio" name="radio14" value="C">C) filter</label></li><br>
+           <li><label> <input type="radio" name="radio14" value="D">D) alpha</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn2">
+        <label>15. Which property changes the order of flex items?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio15" value="A" >A) flex-flow</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio15" value="B">B) order </label></li><br>
+           <li > <label><input type="radio" name="radio15" value="C">C) flex-direction</label></li><br>
+           <li ><label> <input type="radio" name="radio15" value="D">D) align-items</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>16. What does overflow: hidden; do?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio16" value="A" >A) Shows scrollbars</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio16" value="B">B) Cuts off overflowing content</label></li><br>
+           <li > <label><input type="radio" name="radio16" value="C">C) Expands element height</label></li><br>
+           <li ><label> <input type="radio" name="radio16" value="D">D) Ignores content</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn2">
+        <label>17. What is the output of typeof null?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio17" value="A" >A) "null"</label></li><br>
+           <li ><label><input type="radio" name="radio17" value="B">B) "undefined"</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio17" value="C">C) "object"</label></li><br>
+           <li ><label> <input type="radio" name="radio17" value="D">D) "none"</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>18. Which operator checks both value and type equality?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio18" value="A" >A) =</label></li><br>
+           <li ><label><input type="radio" name="radio18" value="B">B) ==</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio18" value="C">C) ===</label></li><br>
+           <li ><label> <input type="radio" name="radio18" value="D">D) equals()</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>19. Which function is used to parse a string into an integer?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio19" value="A" >A) parseInt()</label></li><br>
+           <li ><label><input type="radio" name="radio19" value="B">B) toInteger()</label></li><br>
+           <li > <label><input type="radio" name="radio19" value="C">C) Number.int()</label></li><br>
+           <li ><label> <input type="radio" name="radio19" value="D">D) int()</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>20. What is the output of:<br>console.log([1,2,3] + [4,5]);</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio20" value="A" >A) [1,2,3,4,5]</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio20" value="B">B) "12345"</label></li><br>
+           <li > <label><input type="radio" name="radio20" value="C">C) Error</label></li><br>
+           <li ><label> <input type="radio" name="radio20" value="D">D) [1,2,3][4,5]</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>21. Which method removes the last element from an array?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio21" value="A" >A) shift()</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio21" value="B">B) pop()</label></li><br>
+           <li > <label><input type="radio" name="radio21" value="C">C) push()</label></li><br>
+           <li ><label> <input type="radio" name="radio21" value="D">D) splice()</label></li><br>
+        </ul>
+        </div>
+
+        
+        <div class="qn2">
+        <label>22. What will Boolean(" ") return?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio22" value="A" >A) true</label></li><br>
+           <li ><label><input type="radio" name="radio22" value="B">B) false</label></li><br>
+           <li > <label><input type="radio" name="radio22" value="C">C) null</label></li><br>
+           <li ><label> <input type="radio" name="radio22" value="D">D) undefined</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>23. Which method converts JSON string into an object?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio23" value="A" >A) JSON.stringify()</label></li><br>
+           <li ><label><input type="radio" name="radio23" value="B">B) parse.JSON()</label></li><br>
+           <li > <label><input type="radio" name="radio23" value="C">C) Object.parse()</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio23" value="D">D) JSON.parse()</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>24. Which keyword is used for handling errors?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio24" value="A" >A) error</label></li><br>
+           <li ><label><input type="radio" name="radio24" value="B">B) throw</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio24" value="C">C) catch</label></li><br>
+           <li ><label> <input type="radio" name="radio24" value="D">D) trycatch</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn2">
+        <label>25. What will be the output?<br>console.log(0 == false, 0 === false);</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio25" value="A" >A) true true</label></li><br>
+           <li ><label><input type="radio" name="radio25" value="B">B) false true</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio25" value="C">C) true false</label></li><br>
+           <li ><label> <input type="radio" name="radio25" value="D">D) false false</label></li><br>
+        </ul>
+        </div>
+    <input class="submit" type="submit">
+</form>
+</div>
+
+<!-- Difficult level -->
+<div id="difficult">
+    <form class="difficult">
+        <div class="qn3">
+        <label>1. Which attribute is used in &lt;form&gt; to send form data to a server?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio1" value="A" >A) action</label></li><br>
+           <li><label> <input type="radio" name="radio1" value="B">B) method</label></li><br>
+           <li ><label><input type="radio" name="radio1" value="C">C) target</label></li><br>
+           <li> <label><input type="radio" name="radio1" value="D">D) enctype</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>2. Which attribute in &lt; form &gt; specifies how form data is sent (GET or POST)?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio2" value="A" >A) enctype</label></li><br>
+           <li   class="correctAns"><label> <input type="radio" name="radio2" value="B">B) method</label></li><br>
+           <li ><label><input type="radio" name="radio2" value="C">C) action</label></li><br>
+           <li> <label><input type="radio" name="radio2" value="D">D) type</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>3. Which element defines self-contained content, like a blog post?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio3" value="A" >A) &lt;div&gt;</label></li><br>
+           <li   class="correctAns"><label> <input type="radio" name="radio3" value="B">B) &lt;article&gt;</label></li><br>
+           <li ><label><input type="radio" name="radio3" value="C">C) &lt;section&gt;</label></li><br>
+           <li> <label><input type="radio" name="radio3" value="D">D) &lt;main&gt;</label></li><br>
+        </ul>
+        </div>
+
+    
+        <div class="qn3">
+        <label>4. Which input type is used to select multiple files at once?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio4" value="A" >A) &lt;input type="file"&gt;</label></li><br>
+           <li ><label> <input type="radio" name="radio4" value="B">B) &lt;input type="files"&gt;</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio4" value="C">C) &lt;input type="file" multiple&gt;</label></li><br>
+           <li> <label><input type="radio" name="radio4" value="D">D) &lt;input type="select"&gt;</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn3">
+        <label>5. Which tag is used to embed audio in HTML5?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio5" value="A" >A) &lt;music&gt;</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio5" value="B">B) &lt;audio&gt;</label></li><br>
+           <li ><label><input type="radio" name="radio5" value="C">C) &lt;sound&gt;</label></li><br>
+           <li> <label><input type="radio" name="radio5" value="D">D) &lt;media&gt;</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>6. Which tag is used for scalable vector graphics?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio6" value="A" >A) &lt;svg&gt;</label></li><br>
+           <li ><label> <input type="radio" name="radio6" value="B">B) &lt;canvas&gt;</label></li><br>
+           <li ><label><input type="radio" name="radio6" value="C">C) &lt;vector&gt;</label></li><br>
+           <li> <label><input type="radio" name="radio6" value="D">D) &lt;shape&gt;</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>7. Which attribute improves accessibility by describing images?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio7" value="A" >A) alt</label></li><br>
+           <li ><label> <input type="radio" name="radio7" value="B">B) desc</label></li><br>
+           <li ><label><input type="radio" name="radio7" value="C">C) aria-label</label></li><br>
+           <li> <label><input type="radio" name="radio7" value="D">D) label</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>8. Which element specifies preformatted text (preserves spaces & line breaks)?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio8" value="A" >A) &lt;code&gt;</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio8" value="B">B) &lt;pre&gt;</label></li><br>
+           <li ><label><input type="radio" name="radio8" value="C">C) &lt;samp&gt;</label></li><br>
+           <li> <label><input type="radio" name="radio8" value="D">D) &lt;p&gt;</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>9. What is the difference between relative and absolute positioning?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio9" value="A" >A) Relative → ignores parent, Absolute → relative to parent</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio9" value="B">B) Relative → relative to normal position , Absolute → relative to nearest positioned ancestor</label></li><br>
+           <li ><label><input type="radio" name="radio9" value="C">C) Both are same</label></li><br>
+           <li> <label><input type="radio" name="radio9" value="D">D) None</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>10. Which property creates a grid layout in CSS?</label><br>
+        <ul>
+           <li class="correctAns"><label> <input type="radio" name="radio10" value="A" >A) display: grid</label></li><br>
+           <li ><label> <input type="radio" name="radio10" value="B">B) grid-layout: true</label></li><br>
+           <li ><label><input type="radio" name="radio10" value="C">C) flex: grid</label></li><br>
+           <li> <label><input type="radio" name="radio10" value="D">D) grid-type</label></li><br>
+        </ul>
+        </div>
+
+
+         <div class="qn3">
+        <label>11. Which shorthand sets margin for all four sides?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio11" value="A" >A) margin: top, bottom, left, right;</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio11" value="B">B) margin: top right bottom left;</label></li><br>
+           <li ><label><input type="radio" name="radio11" value="C">C) margin: all;</label></li><br>
+           <li> <label><input type="radio" name="radio11" value="D">D) margin: 4-way;</label></li><br>
+        </ul>
+        </div>
+
+
+         <div class="qn3">
+        <label>12. Which CSS property is NOT inherited by default?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio12" value="A" >A) color</label></li><br>
+           <li ><label> <input type="radio" name="radio12" value="B">B) font-family</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio12" value="C">C) border</label></li><br>
+           <li> <label><input type="radio" name="radio12" value="D">D) line-height</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>13. What is the difference between inline-block and inline?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio13" value="A" >A) Inline has no padding</label></li><br>
+           <li ><label> <input type="radio" name="radio13" value="B">B) Inline-block starts on a new line</label></li><br>
+           <li class="correctAns"><label><input type="radio" name="radio13" value="C">C) Inline-block allows setting width/height , inline does not</label></li><br>
+           <li> <label><input type="radio" name="radio13" value="D">D) Both are identical</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>14. Which pseudo-class selects every 2nd element in a list?</label><br>
+        <ul>
+           <li ><label> <input type="radio" name="radio14" value="A" >A) li:even</label></li><br>
+           <li ><label> <input type="radio" name="radio14" value="B">B) li:nth-of-type(2n+1)</label></li><br>
+           <li ><label><input type="radio" name="radio14" value="C">C) li:nth-child(2)</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio14" value="D">D) li:nth-child(2n)</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>15. Which property makes an element stay fixed when scrolling?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio15" value="A" >A) position: sticky</label></li><br>
+           <li ><label> <input type="radio" name="radio15" value="B">B) position: static</label></li><br>
+           <li ><label><input type="radio" name="radio15" value="C">C)  position: absolute</label></li><br>
+           <li> <label><input type="radio" name="radio15" value="D">D) position: scroll</label></li><br>
+        </ul>
+        </div>
+
+
+         <div class="qn3">
+        <label>16. What does clip-path in CSS do?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio16" value="A" >A) Crops an element into a shape</label></li><br>
+           <li ><label> <input type="radio" name="radio16" value="B">B)  Hides overflow content</label></li><br>
+           <li ><label><input type="radio" name="radio16" value="C">C) Changes opacity</label></li><br>
+           <li> <label><input type="radio" name="radio16" value="D">D) Resizes images</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>17. What is the value of typeof NaN?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio17" value="A" >A) NaN</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio17" value="B">B) number</label></li><br>
+           <li ><label><input type="radio" name="radio17" value="C">C) undefined</label></li><br>
+           <li> <label><input type="radio" name="radio17" value="D">D) object</label></li><br>
+        </ul>
+        </div>
+
+         <div class="qn3">
+        <label>18. Which keyword defines a block-scoped variable?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio18" value="A" >A) var</label></li><br>
+           <li ><label> <input type="radio" name="radio18" value="B">B) const</label></li><br>
+           <li ><label><input type="radio" name="radio18" value="C">C) define</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio18" value="D">D) let</label></li><br>
+        </ul>
+        </div>
+
+
+        <div class="qn3">
+        <label>19. What is the output?<br>console.log([] == []);</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio19" value="A" >A)  true</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio19" value="B">B)  false </label></li><br>
+           <li ><label><input type="radio" name="radio19" value="C">C) []</label></li><br>
+           <li > <label><input type="radio" name="radio19" value="D">D) Error</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>20. What is the output?<br>console.log(typeof function() {});</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio20" value="A" >A) "function"</label></li><br>
+           <li><label> <input type="radio" name="radio20" value="B">B) "object"</label></li><br>
+           <li ><label><input type="radio" name="radio20" value="C">C) "undefined"</label></li><br>
+           <li > <label><input type="radio" name="radio20" value="D">D) "method"</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>21. Which statement about setTimeout() is true?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio21" value="A" >A) It runs code immediately</label></li><br>
+           <li><label> <input type="radio" name="radio21" value="B">B) It repeats execution</label></li><br>
+           <li ><label><input type="radio" name="radio21" value="C">C) It blocks code</label></li><br>
+           <li class="correctAns"> <label><input type="radio" name="radio21" value="D">D) It delays execution</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>22. Which method adds elements to the beginning of an array?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio22" value="A" >A) push()</label></li><br>
+           <li><label> <input type="radio" name="radio22" value="B">B) shift()</label></li><br>
+           <li  class="correctAns"><label><input type="radio" name="radio22" value="C">C) unshift()</label></li><br>
+           <li> <label><input type="radio" name="radio22" value="D">D) concat()</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>23. Which operator is used for optional chaining?</label><br>
+        <ul>
+           <li><label> <input type="radio" name="radio23" value="A" >A) ?</label></li><br>
+           <li class="correctAns"><label> <input type="radio" name="radio23" value="B">B) ?.</label></li><br>
+           <li ><label><input type="radio" name="radio23" value="C">C) ??</label></li><br>
+           <li> <label><input type="radio" name="radio23" value="D">D) :?</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>24. What is the output?<br>console.log(1 &lt; 2 &lt; 3);</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio24" value="A" >A) true</label></li><br>
+           <li><label> <input type="radio" name="radio24" value="B">B) false</label></li><br>
+           <li ><label><input type="radio" name="radio24" value="C">C) 3</label></li><br>
+           <li> <label><input type="radio" name="radio24" value="D">D) Error</label></li><br>
+        </ul>
+        </div>
+
+        <div class="qn3">
+        <label>25. Which ES6 feature allows unpacking values from arrays/objects?</label><br>
+        <ul>
+           <li  class="correctAns"><label> <input type="radio" name="radio25" value="A" >A)  Spread operator</label></li><br>
+           <li><label> <input type="radio" name="radio25" value="B">B) Rest parameter</label></li><br>
+           <li ><label><input type="radio" name="radio25" value="C">C) Arrow function</label></li><br>
+           <li> <label><input type="radio" name="radio25" value="D">D) Template literal</label></li><br>
+        </ul>
+        </div>
+         <input class="submit" type="submit">
+    </form>
+</div>
+  <script src="quiz.js"></script>  
+</body>
+</html>
