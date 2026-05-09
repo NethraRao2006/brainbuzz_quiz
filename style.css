@@ -262,12 +262,12 @@ input[type="radio"]{
     }
 
     input[type="radio"]{
-    width:15px;
-    height: 15px;
+    width:16px;
+    height: 16px;
     border:2px solid white;
     }
     .tick{
-    font-size: 10px;
+    font-size: 13px;
     }
 
     .correct{
